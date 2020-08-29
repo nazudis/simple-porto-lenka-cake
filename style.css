@@ -1,0 +1,198 @@
+@font-face {
+    font-family: "Nirmala";
+    src: url("assets/nirmala.ttf");
+}
+
+@font-face {
+    font-family: "Nirmala Bold";
+    src: url("assets/nirmalab.ttf");
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Header Style - Home */
+.jumbotron {
+    background:#4A543B;
+    text-align: center;
+    color: #F48865;
+}
+
+.jumbotron-image {
+    width: 100%;
+    max-height: 700px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.menu {
+    padding-left: 25px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 12.5px;
+    background:#4A543B;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+nav li{
+    display: inline;
+    list-style-type: none;
+    margin-right: 25px;
+}
+
+nav ul {
+    float: right;
+}
+
+li a {
+    padding-left: 12.5px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 12.5px;
+    color: #F48865;
+    text-decoration: none;
+    transition: 0.5s;
+    opacity: none;
+    font-family: "Nirmala Bold";
+    font-size: 1.2em;
+}
+
+a:hover{
+    background-color:rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
+/* Content Syle - Product */
+.content {
+    background: #E4E4E4 ;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    font-family: "Nirmala Bold";
+}
+
+.content h1 {
+    text-align: center;
+    font-size: 3em;
+}
+
+.main {
+    padding: 30px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.card {
+    margin: 0 auto;
+    background: white;
+    padding: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+.text-product {
+    font-family: "Nirmala";
+    width: 250px;
+}
+
+.card img {
+    width: 250px;
+    height: 250px;
+}
+
+/* Customer Review Style */
+
+.content-review {
+    background: #4A543B;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.content-review h1 {
+    text-align: center;
+    font-size: 3em;
+    font-family: "Nirmala Bold";
+    color: #F48865;
+}
+
+.review-image {
+    flex-grow: 1;
+    max-width: 240px;
+    max-height: 380px;
+    margin : 0 auto;
+}
+
+
+/* Style About */
+.jumbotron h1{
+    font-size: 3em;
+    font-family: "Nirmala Bold";
+}
+
+.abouts {
+    padding: 60px;
+}
+
+.container-about {
+    width: 60%;
+    margin-top: 25px;
+    font-family: "Nirmala";
+    color: black;
+    display: flex;
+}
+
+.table {
+    flex-grow: 1;
+    text-align: left;
+}
+.photo {
+    flex-grow: 1;
+    text-align: right;
+}
+
+.photo img {
+    width: 200px;
+    height: 300px;
+}
+/* Footer */
+
+footer {
+    background: wheat;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Media Screen */
+
+@media screen and (max-width: 992px) {
+
+    .main {
+        display: flex;
+        margin: 0 auto;
+        flex-flow: column;
+    }
+
+    .container-about {
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+    }
+    
+    .table {
+        text-align: left;
+    }
+    .photo {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+}
